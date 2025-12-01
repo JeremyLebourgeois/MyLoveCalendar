@@ -1,0 +1,21 @@
+{
+  "name": "Calendrier Eloïne",
+  "short_name": "Calendrier",
+  "description": "24 jours de surprises monpour le tikeur !",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#FFC0CB", 
+  "theme_color": "#800000",
+  "icons": [
+    {
+      "src": "./images/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./images/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

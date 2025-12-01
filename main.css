@@ -1,0 +1,132 @@
+/* Reset et Base */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdf0f2; /* Rose très pâle */
+    color: #4a4a4a;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+header {
+    padding: 20px;
+    background-color: #800000;
+    color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+h1 { font-size: 1.5rem; margin-bottom: 5px; }
+
+/* Grille du Calendrier */
+#calendrier-grille {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colonnes */
+    gap: 15px;
+    padding: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.case {
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s, background-color 0.3s;
+    background-color: white;
+    color: #800000;
+    position: relative;
+    border: 2px solid #FFC0CB;
+}
+
+/* États des cases */
+.case.future {
+    background-color: #eee;
+    color: #aaa;
+    border-color: #ddd;
+    cursor: not-allowed;
+    opacity: 0.8;
+}
+
+.case.active {
+    background-color: #800000;
+    color: white;
+    cursor: pointer;
+    border-color: #600000;
+    animation: pulse 2s infinite;
+}
+
+.case.opened {
+    background-color: #FFC0CB; /* Rose */
+    color: #800000;
+    border-color: #800000;
+    opacity: 0.6;
+}
+
+/* Animation de pulsation pour la case du jour */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(128, 0, 0, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 10px rgba(128, 0, 0, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(128, 0, 0, 0); }
+}
+
+/* Pop-up (Modale) d'affichage */
+#modal-overlay {
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#modal-overlay.hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#contenu-affichage {
+    background: white;
+    width: 90%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+#close-btn {
+    position: absolute;
+    top: 10px; right: 15px;
+    background: none; border: none;
+    font-size: 2rem; color: #800000;
+    cursor: pointer;
+}
+
+#contenu-injecte img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.message-text {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
