@@ -1,30 +1,29 @@
 // --- DONNÉES ---
 const calendrierData = [
-    // Tes 24 messages copiés ici
-    { message: "Mon amour, un mois magique commence ! Ce premier mot est pour te rappeler à quel point tu illumines mes journées. ❤️", imagePath: "./images/contenu_1.jpg" },
-    { message: "Souviens-toi de notre premier café ? Ce jour-là, j'ai su que tout allait changer. C'était le début de notre belle histoire.", imagePath: "./images/contenu_2.jpg" },
-    { message: "« La vie est faite de petits bonheurs. » Et toi, tu es mon plus grand. 🥰", imagePath: "./images/contenu_3.jpg" },
-    { message: "Je ne me lasserai jamais de la façon dont tes yeux sourient. Tu es la plus belle chose que je vois chaque matin. ✨", imagePath: "./images/contenu_4.jpg" },
-    { message: "Blague du jour : Pourquoi est-ce qu'on dit que le Père Noël est marié ? Parce qu'il porte toujours son **Alliance** ! 😉", imagePath: "./images/contenu_5.jpg" },
-    { message: "Le souvenir de notre voyage surprise (celui avec le train manqué !) me fait toujours sourire. Même le chaos est magique avec toi.", imagePath: "./images/contenu_6.jpg" },
-    { message: "Si j'avais une seule chose à emporter sur une île déserte, ce serait toi. (Et peut-être une écharpe, il fait froid en décembre). 🧣", imagePath: "./images/contenu_7.jpg" },
-    { message: "« Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la même direction. » – Antoine de Saint-Exupéry. C'est nous.", imagePath: "./images/contenu_8.jpg" },
-    { message: "J'ai hâte de créer des millions d'autres souvenirs avec toi. Quel est notre prochain grand projet ? L'amour est au programme !", imagePath: "./images/contenu_9.jpg" },
-    { message: "Pourquoi le Père Noël met-il un bonnet ? Pour ne pas attraper de **rhume des fêtes** ! Haha ! 🤧", imagePath: "./images/contenu_10.jpg" },
-    { message: "Ce dîner où on a ri aux larmes d'une blague stupide que personne n'a comprise. Ces moments-là sont les meilleurs.", imagePath: "./images/contenu_11.jpg" },
-    { message: "Si la journée est difficile, sache que tu as une personne qui pense fort à toi et t'envoie toute son énergie. Tu es fort(e) !", imagePath: "./images/contenu_12.jpg" },
-    { message: "Ta gentillesse est un super-pouvoir. Ne change jamais. Tu rends le monde meilleur, ne serait-ce que le mien. 💖", imagePath: "./images/contenu_13.jpg" },
-    { message: "« Le bonheur est la seule chose qui se double si on le partage. » – Albert Schweitzer. Heureux d'être ton partenaire de bonheur.", imagePath: "./images/contenu_14.jpg" },
-    { message: "Si tu te demandes à quoi je pense, la réponse est simple : **toi**. Chaque jour, à chaque instant.", imagePath: "./images/contenu_15.jpg" },
-    { message: "Quel est le plat préféré du Père Noël à la plage ? Le **poisson pané** ! 🐠 (Oui, je sais, elle est nulle, mais je t'aime quand même !)", imagePath: "./images/contenu_16.jpg" },
-    { message: "Écoute *notre* chanson aujourd'hui. Elle me rappelle notre premier slow, même si on était juste dans la cuisine. 🎶", imagePath: "./images/contenu_17.jpg" },
-    { message: "Tu es mon refuge, mon ancre, et la plus belle aventure de ma vie. Je t'aime, profondément.", imagePath: "./images/contenu_18.jpg" },
-    { message: "« Un amour sans admiration n'est qu'une amitié. » – George Sand. Je t'admire pour tout ce que tu es.", imagePath: "./images/contenu_19.jpg" },
-    { message: "Ce film qu'on a regardé pour la première fois ensemble, en se tenant la main. Le film était mauvais, mais la soirée était parfaite.", imagePath: "./images/contenu_20.jpg" },
-    { message: "Si j'étais un flocon de neige, je voudrais tomber dans ta main. Non, en fait, je préfère être ta **couette** pour te garder au chaud ! 🧤", imagePath: "./images/contenu_21.jpg" },
-    { message: "Bientôt Noël ! Mais plus encore, bientôt une nouvelle année de *nous*. Hâte de t'aimer encore plus en 2026. (PS : Ce sera une année bissextile pour l'amour.)", imagePath: "./images/contenu_22.jpg" },
-    { message: "Juste un petit rappel pour le 23 : chaque moment passé avec toi est un cadeau. Le compte à rebours est presque terminé, mais pas mon amour.", imagePath: "./images/contenu_23.jpg" },
-    { message: "Joyeux réveillon ! Le plus beau cadeau, c'est toi. Je t'aime. J'espère que ce calendrier t'a plu. Viens vite, je t'attends sous le houx. 💋", imagePath: "./images/contenu_24.jpg" }
+    { message: "Premier jour de TON calendrier, j'aimerais simplement te souhaiter une belle première journée de stage et plein de courage. 🖤", imagePath: "./images/contenu_1.jpg" },
+    { message: "Te souviens-tu de nos premiers restaurants ? Je me souviendrai toute ma vie de celui-ci qui était à tes côtés alors que je te découvrais encore... 🖤", imagePath: "./images/contenu_2.jpg" },
+    { message: "« Together, we made it. » Cette phrase nous a vraiment marqués. Ces mois de distance avaient été bien longs sans toi... 🖤", imagePath: "./images/contenu_3.jpg" },
+    { message: "Je ne me lasserai jamais de ton regard amoureux. Il me fait craquer. Résultat : je t'aime à n'en plus pouvoir ! 🖤", imagePath: "./images/contenu_4.jpg" },
+    { message: "Ça fait longtemps que je n'ai pas pu poser mes mains autour de ton corps. Bientôt, je te ferai danser à nouveau. 🖤", imagePath: "./images/contenu_5.jpg" },
+    { message: "On peut dire que je suis en voyage, certes, mais sans toi il manque quelque chose. Tu n'imagines pas comme j'ai hâte de pouvoir sauter dans un train et partir avec toi. 🖤", imagePath: "./images/contenu_6.jpg" },
+    { message: "Bah alors mon Tikeur... C'est pas là le dodo, viens là dans mes bras que je t'emmène jusqu'à notre lit d'amoureux. 🖤", imagePath: "./images/contenu_7.jpg" },
+    { message: "J'aimerais t'avoir à mes côtés pour la vie, que l'on continue de discuter de tout et rien pour toujours. 🖤", imagePath: "./images/contenu_8.jpg" },
+    { message: "Tes papouilles me manquent bien trop. Dans 10 jours, tu sentiras dès le matin mes doigts parcourir ton corps à la recherche de tremblements. 🖤", imagePath: "./images/contenu_9.jpg" },
+    { message: "Hop là. Simple petit souvenir d'une balade tranquille pendant laquelle je ne cessais de sourire en te voyant sautiller. 🖤", imagePath: "./images/contenu_10.jpg" },
+    { message: "POV : le petit poulpinou qui se fera tresser par sa copine en rentrant parce que ses cheveux font 2 mètres maintenant. 🖤", imagePath: "./images/contenu_11.jpg" },
+    { message: "Un de nos meilleurs dates et je ne suis pas prêt de l'oublier. Tikeur, on y retournera, promis. 🖤", imagePath: "./images/contenu_12.jpg" },
+    { message: "Ta mignonnerie naturelle comme ça c'est vraiment pour m'abattre et que je ne cesse de tomber toujours plus amoureux. 🖤", imagePath: "./images/contenu_13.jpg" },
+    { message: "Ma très chère femme, accepteriez-vous que je vous guide à travers ce magnifique château construit à votre effigie ? Accrochez-vous donc à mon bras. 🖤", imagePath: "./images/contenu_14.jpg" },
+    { message: "JE T'AIIIIIIIME !!! Retournons nous câliner dans le vent et les bruits de la mer. Tu me manques mon amour ! 🖤", imagePath: "./images/contenu_15.jpg" },
+    { message: "Ce petit câlin par derrière... plus que quelques jours avant que je t'embrasse le cou par derrière pendant que tu cuisines. 🖤", imagePath: "./images/contenu_16.jpg" },
+    { message: "Regarde-moi cette belle gosse. Eh oui, c'est la mienne ! Rien qu'à moi. 🖤", imagePath: "./images/contenu_17.jpg" },
+    { message: "Tu es mon petit havre de paix. Tu me combles de bonheur et me tranquillises. Avec toi, je me sens bien alors ne pars pas. 🖤", imagePath: "./images/contenu_18.jpg" },
+    { message: "22 et 23 mars... Ça a toujours été un signe pour moi. Ça ne peut être que TOI. (J'ai été conçu en premier) 🖤", imagePath: "./images/contenu_19.jpg" },
+    { message: "Bon j'avoue tu m'as peut-être battu une fois mais je prendrai ma revanche dans un combat irl, sois prête. 🖤", imagePath: "./images/contenu_20.jpg" },
+    { message: "Le Louvre... Ce jour-là était top ! En plus je me baladais avec la seule œuvre que le musée n'avait pas encore, la plus belle. 🖤", imagePath: "./images/contenu_21.jpg" },
+    { message: "Câline-moi fort mon amoureuse, j'aime quand tu m'exprimes tout ton amour. Ça me met tout en joie ! 🖤", imagePath: "./images/contenu_22.jpg" },
+    { message: "Noël approche... Il se pourrait que l'on se retrouve de nouveau extrêmement beaux et charismatiques comme sur cette magnifique photo. 🖤", imagePath: "./images/contenu_23.jpg" },
+    { message: "Joyeux Noël ! Et viens là que je t'aime et t'embrasse toujours plus fort ! 🖤", imagePath: "./images/contenu_24.jpg" }
 ];
 
 // --- LOGIQUE ---
@@ -79,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             caseEl.classList.add('future');
             caseEl.addEventListener('click', () => {
-                alert("Hop hop hop, pas de triche mon amour ! Reviens le " + i + " décembre 😜");
+                alert("Hop hop hop, pas de triche mon amour ! Reviens le " + i + " décembre 😘");
             });
         }
 

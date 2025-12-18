@@ -1,4 +1,4 @@
-const CACHE_NAME = 'avent-eloine-v1';
+const CACHE_NAME = 'avent-eloine-v2';
 
 // On définit les fichiers de base
 const ASSETS_TO_CACHE = [
